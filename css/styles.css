@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=La+Belle+Aurore&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=La+Belle+Aurore&display=swap');
+
+/* RESET **/
+* {
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+/* FUENTES **/
+.josefinDark {
+    color: #776B5D;
+    font-family:"Josefin Sans", sans-serif;
+    margin-left: 60px;
+}
+.auroreDark {
+    color: #776B5D;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 35px;
+    margin: 30px 20px 30px 20px ;
+}
+.auroreLight {
+    color: #B0A695;
+    font-family: "La Belle Aurore", cursive;
+    font-size: 20px;
+    margin: 30px 20px 30px 20px ;
+}
+.piePagina {
+    color: #D9D9D9;
+    font-family:"Josefin Sans", sans-serif;
+    background-color: #B0A695;
+    text-align: center;
+}
+.precios {
+    color: #B0A695;
+    font-family:"Josefin Slab", serif;
+    font-size: 16px;
+    margin: 10px 20px 20px 20px ;
+}
+footer p {
+    margin: 20px 10px 10px 10px;
+}
+a{
+    text-decoration: none;
+    color: #776B5D;
+}
+
+/* HEADER **/
+header{
+    background-image: url(../assets/img/fondo.png);
+    background-size: cover;
+    height: 700px;
+    width: 100%; 
+}
+header nav {
+    font-size: 16px;
+}
+.header2 {
+    background-image: url(../assets/img/fondo2.png);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+}
+.header2 a {
+    color: #D9D9D9;
+}
+.header3 {
+    background-image: url(../assets/img/fondo3.png);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+}
+.header3 a {
+    color: #D9D9D9;
+}
+.header4 {
+    background-image: url(../assets/img/fondo4.png);
+}
+.header5 {
+    background-image: url(../assets/img/fondo5.png);
+}
+
+/* FLEXBOX **/ 
+.flex-nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-right: 20px;
+    position: relative;
+    top: 20px;
+}
+.flex-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 30px 20px 20px ;
+}
+.flex-footer {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-imageText {
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    justify-content: space-around;
+}
+.flex-div {
+    display: flex;
+    flex-direction: row;
+    gap: 20;
+}
+.flex-texto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.logo {
+    position: fixed;
+}
+
+/* GRIDS **/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.grid2 {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+@media (max-width:768px) {
+    .flex-nav a  {
+        font-size: .75rem;
+        justify-content: end;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+}
